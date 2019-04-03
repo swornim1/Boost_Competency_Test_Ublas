@@ -1,1 +1,1 @@
-Competency test for Boost GSoc 2019
+# Competency Test for Google Summer of Code 2019
