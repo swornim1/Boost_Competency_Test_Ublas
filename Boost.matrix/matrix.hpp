@@ -98,6 +98,46 @@ namespace matrix_and_operators{
                                 return return_value;
 
                         }
+
+                        void operator+=(const matrix& input_matrix)
+                        {
+                                if(this->matrix_col != input_matrix.matrix_col || this->matrix_row != input_matrix.matrix_row)
+                                {
+                                        std::cout<<"Operation cannot be Performed ";
+                                }
+                                else
+                                {
+                                        for(int i=0; i<matrix_row; i++)
+                                        {
+                                                for(int j=0; j<matrix_col; j++)
+                                                {
+                                                        this->matrix_container[i][j]+=input_matrix.matrix_container[i][j];
+                                                }
+                                        }
+                                }
+
+                        }
+
+			void operator-=(const matrix& input_matrix)
+			{
+                                if(this->matrix_col != input_matrix.matrix_col || this->matrix_row != input_matrix.matrix_row)
+                                {
+                                        std::cout<<"Operation cannot be Performed ";
+				}
+				else
+				{
+					for(int i=0; i<matrix_row; i++)
+					{
+						for(int j=0; j<matrix_col; j++)
+						{
+							this->matrix_container[i][j]-=input_matrix.matrix_container[i][j];
+						}
+					}
+				}
+				
+			}
+
+			
 	};
 } 
 #endif 
