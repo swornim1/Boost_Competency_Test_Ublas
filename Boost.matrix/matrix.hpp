@@ -1,6 +1,6 @@
 /***********************************************************************************************************************************************************
 *Author: Swornim Baral																																	   *
-*Description: Implementation of Matrix Class and different functionality including + , +=, -, -=, *, loading a matrix from file 						   * 
+*Description: Implementation of Matrix Class and different functionality including + , +=, -, -=, *, and loading a matrix from file 						   * 
 ***********************************************************************************************************************************************************/
 #ifndef MATRIX_OPERATION
 #define MATRIX_OPERATION
@@ -114,7 +114,7 @@ namespace matrix_and_operators{
 
               }
 
-			void operator-=(const matrix& input_matrix)
+		void operator-=(const matrix& input_matrix)
 			{
                 
                 /*Checking the dimensions of two matrices for determining the eligibility for addition*/
