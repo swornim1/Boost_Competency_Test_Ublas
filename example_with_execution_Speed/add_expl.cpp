@@ -1,3 +1,6 @@
+/*Description: Example for + operator and execution speed of the + operator
+ *
+ * */
 #include "../Boost.matrix/matrix.hpp"
 #include <iostream>
 #include <chrono>
